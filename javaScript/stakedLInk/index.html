@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.cdnfonts.com/css/circular-std" rel="stylesheet">
+    <title>% LINK staked</title>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load("current", {packages:["corechart"]});
+      google.charts.setOnLoadCallback(drawChart);
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['Wallet', 'Amount of LINK per Day'],
+          ['LINK in staking wallets (millions)',     24.456],
+          ['LINK in non-staking wallet (millions)',    483.543]
+        ]);
+
+        var options = {backgroundColor: 'transparent',
+          is3D: true,
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('piechart_3d'));
+        chart.draw(data, options);
+      }
+    </script>
+</head>
+<body>
+    <div class="pie">
+        <h1> % LINK staked</h1>
+        <h5 class="stats">stats based on the official <a href="https://etherscan.io/address/0x3feb1e09b4bb0e7f0387cee092a52e85797ab889#tokentxns.">staking wallet</a></h5>
+    </div>
+    <div id="piechart_3d" style="width: 900px; height: 500px;"></div>
+    <h4> Circulating supply: 507 999 970,45 LINK</h4>
+    <h5> This website is in no way, shape nor form associated with Chainlink Labs. </h5>
+    <html>
+  

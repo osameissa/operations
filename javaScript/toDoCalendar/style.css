@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+    
+    body {
+        background-image: linear-gradient(120deg,#f6d365,#d88771);
+        color: white;
+        font-family: 'Poppins', sans serif;
+        min-height: 100vh;
+    }
+    
+    header {
+        font-size: 1.5rem;
+    
+    }
+    
+    header, form {
+        min-height: 20vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    form input, form button{
+        padding: 1rem;
+        font-size: 2rem;
+        border: none;
+        background: white;
+    
+    }
+    
+    form button {
+        color: #d88771;
+        background: white;
+        cursor: pointer;
+        transition: all 0,3s ease;
+    }
+    
+    form button:hover {
+        background: #d88771;
+        color:white;
+    }
+    
+    .toDoContainer {
+        display: flex;
+        justify-content: center;
+        align-items:center;
+    }
+    
+    .toDoList {
+        min-width: 30%;
+        list-style: none;
+    
+    }
+    
+    .toDo {
+        display: flex;
+        background: white;
+        color: black;
+        font-size: 1.5rem;
+        justify-content: space-between;
+        align-items: center;
+        transition: all 0.5s ease;
+        margin: 0,5rem;
+        
+    }
+    
+    .toDo li {
+        flex: 1;
+    }
+    
+    .trashBtn, .completedBtn {
+        background: #ff6f37;
+        color: white;
+        border: none;
+        padding: 1rem;
+        cursor: pointer;
+        font-size: 1rem;
+    }
+    
+    .completedBtn {
+        background: rgb(73, 204, 73); 
+    }
+    
+    .toDoItem {
+        padding: 0rem 1rem;
+    }
+    
+    
+    .fa-trash, .fa-check {
+        pointer-events: none;
+    }
+    
+    
+    
+    input.toDo {
+    padding: 1.3rem;
+    }
+    
+    div.toDo {
+        margin-bottom: 0.5rem;
+    }
+    
+    .completed {
+        text-decoration: line-through;
+        opacity: 0.5;
+    }
+    
+    .fall {
+        transform: translateY(8rem) rotateZ(20deg);
+        opacity: 0;
+    }

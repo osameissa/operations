@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="style.css">
+<title>Login page</title>
+<script src="script.js" defer></script>
+</head>
+
+<body class="checking" onload="checkCredentials()">
+<div class ="meny">
+    <ul>
+        <li><a>Home</a></li>
+        <li><a>News</a></li>
+        <li><a>Contact</a></li>
+        <li style="float:right"><a class="signoutBtn formHidden" id="signOutBtn" style="font-weight: bold;"" href="";></a></li>
+    </ul>
+</div>
+    
+<div class ="container">
+    <form class="form" id="logIn">
+        <h1 class="formTitle" id="welcome">Login</h1>
+        <div class="formMessage errorMessage"></div>
+        <div class="formInputGroup">
+            <input type="text" class="formInput" id="username" autofocus placeholder="Username or email">
+            <div class="formInputError"></div>
+        </div>
+        <div class="formInputGroup">
+            <input type="password" class="formInput" id="password" autofocus placeholder="Password">
+            <div class="formInputError formHidden" id="invalid">Invalid username/password combination</div>
+        </div>
+        <button class="formBtn" type="submit" onclick="loggingIn()">Continue</button>
+        <p class="formText">
+            <a href="#" class="formLink">Forgot your password?</a>
+        </p>
+        <p class="formText"> 
+            <a href="" id="linkCreateAccount" class="formLink">Dont have an account? Create account</a>
+        </p>
+    </form>
+
+    <form class="form formHidden" id="createAccount">
+        <h1 class="formTitle">Create account</h1>
+        <div class="formMessage errorMessage"></div>
+        <div class="formInputGroup">
+            <input type="text" class="formInput" id="newUsername" autofocus placeholder="Username">
+            <div class="formInputError"></div>
+        </div>
+        <div class="formInputGroup">
+            <input type="text" class="formInput" autofocus placeholder="Email address">    
+            <div class="formInputGroup">
+                <input type="password" class="formInput" id="newPassword" autofocus placeholder="Password">
+                <div class="formInputGroup">
+                <input type="password" class="formInput" id="newPassword2" autofocus placeholder="Confirm password">
+                <div class="formInputError formHidden" id="usernameError">Please enter a username</div>
+            </div>
+            <div class="formInputError formHidden"></div>
+        </div>
+        <div class="formInputError"></div>
+    </div>
+    <button class="formBtn2" id="formBtn2" type="submit">Continue</button>
+    <p class="formText">
+    <a href="" id="linkLogIn" class="formLink">Already have an account? Sign in</a>
+    </p>
+</form>
+
+<div class = "formHidden" id="formTask">
+    <h1 id="welcome"></h1>
+    </div>
+</div>
+<footer>
+    <p class="dou" style="font-weight:bolder">Do you have any questions? Contact us at:</p>
+    <a style="text-decoration:none" style="font-weight: lighter;">
+        <i class="fa-solid fa-envelope"></i> contact@example.io
+    </a><br><br>
+    <a style="font-weight:light"> <i class="fa-solid fa-phone"></i> +1 234 567 89
+    </a>
+</footer>
+</body>
+</html>
